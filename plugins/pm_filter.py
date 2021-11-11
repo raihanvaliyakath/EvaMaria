@@ -76,7 +76,7 @@ async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("ആഹ് എന്നിട്ട്", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -436,7 +436,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('👨‍🦱 My Dev', url='https://t.me/IAM_A_JOKER')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -467,7 +467,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('❤ Source', url='https://t.me/SourceCode_channel/2')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
